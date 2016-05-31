@@ -6,7 +6,7 @@ var app = require('../app');
 var io = require('socket.io');
 // var cookieParser = require('cookie-parser');
 var connecter = require('../database');
-connecter('mongodb://127.0.0.1/gameTest');
+connecter('mongodb://127.0.0.1/gameTestFourth');
 var SessionSockets = require('session.socket.io');
 var gameController = require('../controller/gameController');
 var gameplayer = require('../controller/gameplayer');
@@ -44,10 +44,12 @@ var gameCounter = 0;
 var firstPlayerJustEntered = true;
 var playersSocketDict = {};
 
+
+var numberOfHumanToHumanGames = -1;
 var gameTypes = gameProperties.gameTypes; 
 ionew.sockets.on('connection', function (socket) {
 
-	socket.on('waitingTimeElapsed', function()
+var waitingTimeElapsedFunction = function()
 	{
 	
 			if(!(socket.id in gameMap)) // if player has not been already mapped
@@ -84,7 +86,11 @@ ionew.sockets.on('connection', function (socket) {
 				gameCounter += 1;
 			}
 			
-	});
+	};
+
+	
+	socket.on('waitingTimeElapsed', waitingTimeElapsedFunction);
+	
 
 	socket.on('join', function(hiitNumber)
 	{
@@ -102,6 +108,10 @@ ionew.sockets.on('connection', function (socket) {
 		var gameTypeIndex = gameCounter % gameTypes.length;
 		var presentGameType = gameTypes[gameTypeIndex];
 		startGameTypeForTheNextTwoPlayers(presentGameType);		
+		if(!firstPlayerJustEntered && gameCounter >= numberOfHumanToHumanGames)
+		{
+			waitingTimeElapsedFunction();
+		}
 	});
 
 	function startGameTypeForTheNextTwoPlayers(gameType)
