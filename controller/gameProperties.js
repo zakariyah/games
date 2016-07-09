@@ -6,12 +6,12 @@ gameProperties.type = 'PD';
 // gameProperties.pdGameMatrix = [['A', 'B', 0, 5], ['B', 'A', 5, 0], ['A', 'A', 3, 3], ['B', 'B', 1, 1]];
 // for new game.
 gameProperties.pdGameMatrix = [['A', 'A', 3, 3], ['A', 'B', 0, 5], ['B', 'A', 5, 0], ['B', 'B', 1, 1]];
-gameProperties.gameTypes  =    [ 'normal']; 
+gameProperties.gameTypes  =    [ //'normal']; 
 // 'randomRecommenders', 
  // 'realRecommenders'
-// 'oneRealRecommender' 
+'oneRealRecommender' 
 //,'oneRandomRecommender'
-// ];
+];
 
 module.exports = gameProperties;
 
