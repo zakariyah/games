@@ -854,11 +854,14 @@ var PrisonersDilemma = function()
 	{	
 		if(content.count == 0)
 		{
+			console.log('I was called');
 			waitingTimeElapsed. stopTimer();
 			hasRecommender = content.recommenderOptionValue;
 			// startRealGame(hasRecommender);
+			console.log('I was called 2');
 			myCanvasContainer.startGame(chatBox);
 			gameManager.startTimer();
+			console.log('I was called 3');
 			// gameTimer.startTimer();
 			//// var agentStates = agentSettings.getAgentStateHtml(content.agentState);
 			//// document.getElementById('agentState').innerHTML = agentStates;
@@ -866,6 +869,7 @@ var PrisonersDilemma = function()
 			
 			setAgentVariables(content);
 			questionsToAsk.moveToNextRound(content, false);
+			console.log('I was called 4');
 			if(!hasRecommender)
 	  		{
 				  	document.getElementById('chatBoxContainer').style.display = 'none';
@@ -876,6 +880,10 @@ var PrisonersDilemma = function()
 	  		{
 	  			document.getElementById('questionAndFeedback').style.visibility = 'visible';	
 	  		}
+	  		console.log('I was called 5');
+	  		document.getElementById('roundNumber').innerHTML = 'Round ' + (content.count + 1);
+			document.getElementById('actionAndReview').style.display = 'block';
+			document.getElementById('timerBegin').innerHTML = '';
 		}
 		else if(content.count < content.rounds)
 		{

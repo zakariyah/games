@@ -45,7 +45,7 @@ var firstPlayerJustEntered = true;
 var playersSocketDict = {};
 
 
-var numberOfHumanToHumanGames = -1;
+var numberOfHumanToHumanGames = 1000000; // high number for human to human games
 var gameTypes = gameProperties.gameTypes; 
 ionew.sockets.on('connection', function (socket) {
 
