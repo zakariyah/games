@@ -125,7 +125,7 @@ var OptionButton = function(htmlId1, htmlId2, nextRound)
 		but[i].onclick = butClick(i+1);
 	}
 		
-	this.reset = function()
+		this.reset = function()
 	{
 		but[0].disabled = false;
 		but[1].disabled = false;
