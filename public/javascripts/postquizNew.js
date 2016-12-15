@@ -160,9 +160,9 @@ htmlString += "</table></div></div>";
 htmlString += "</div>";
 
 htmlString += "<div id='page3'  style='display:none'>";
-htmlString += "<div class='form-group'><b>Associate Identity:</b><p>1. At the beginning of the game, you were told that you would be playing the game with a BOT. Given your actual experience playing the game, who do you think you played with?</p></div>";
+htmlString += "<div class='form-group'><b>Associate Identity:</b><p>1. At the beginning of the game, you were told that you would be playing the game with a Human Associate. Given your actual experience playing the game, who do you think you played with?</p></div>";
 
-htmlString += "<div class='form-group'><div class='col-sm-10'><div class='checkbox'><label><input type='radio' name='thought' value='1'>  Yes, a BOT as said</label><label><input type='radio' name='thought' value='2'>  No, a HUMAN associate</label></div></div></div>";
+htmlString += "<div class='form-group'><div class='col-sm-10'><div class='checkbox'><label><input type='radio' name='thought' value='1'>  Yes, a HUMAN associate as said</label><label><input type='radio' name='thought' value='2'>  No, a BOT</label></div></div></div>";
 
 htmlString += "<div class='form-group'><div class='col-sm-10'><label for='inputEmail3' class='control-label col-sm-6'>Please explain briefly the reason for your choice above.</label>";
 htmlString += "<div class=' col-sm-6'><textarea name='reason1' class='form-control' rows='3'></textarea></div></div></div>";
