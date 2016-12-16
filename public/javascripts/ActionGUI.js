@@ -330,7 +330,7 @@ var TimerFunction = function(countIn, intervalIn, periodicFunction, endFunction,
 
 var WaitingTimeElapsed = function(socket)
 {
-	var totalWaitingTime = 300;
+	var totalWaitingTime = 0;
 	var intervalWaiting = 1000;
 	var waitingTimePeriodicFunction = function(count)
 	{
