@@ -178,6 +178,93 @@ htmlString += " <div class='form-group'><div class='col-sm-offset-6 col-sm-6'>";
 htmlString += "<input name='proceed' type='submit' class='btn btn-primary' value='Go To Payment'/></div></div>";
 htmlString += "</div>";
 htmlString += "</div>";
+
+htmlString += "<div id='page4' style='display:block'>";
+	  // htmlString += "Page 4";
+	htmlString += "<div class='form-group'>";
+	htmlString += "<label for='inputEmail3' class='control-label'>1. People are more likely to be cooperative than autonomous machines.</label></div>";
+
+	htmlString += "<div class='form-group'><div class='col-sm-10'> <div class='checkbox'>";
+	htmlString += "<label><input type='radio' name='peoplecooperative'  value='1'>  Strongly disagree";
+	htmlString += "</label><label><input type='radio' name='peoplecooperative'  value='2'>  Somewhat disagree";
+	htmlString += "</label><label><input type='radio' name='peoplecooperative'  value='3'>  Neutral";
+	htmlString += "</label><label><input type='radio' name='peoplecooperative'  value='4'>  Somewhat agree";
+	htmlString += "</label><label><input type='radio' name='peoplecooperative'  value='5'>  Strongly agree";
+	htmlString += "</label></div></div></div>";
+
+	//2
+	htmlString += "<div class='form-group'>";
+	htmlString += "<label for='inputEmail3' class='control-label'>2. People are more likely to be devious than autonomous machines.</label></div>";
+
+	htmlString += "<div class='form-group'><div class='col-sm-10'> <div class='checkbox'>";
+	htmlString += "<label><input type='radio' name='peopledevious'  value='1'>  Strongly disagree";
+	htmlString += "</label><label><input type='radio' name='peopledevious'  value='2'>  Somewhat disagree";
+	htmlString += "</label><label><input type='radio' name='peopledevious'  value='3'>  Neutral";
+	htmlString += "</label><label><input type='radio' name='peopledevious'  value='4'>  Somewhat agree";
+	htmlString += "</label><label><input type='radio' name='peopledevious'  value='5'>  Strongly agree";
+	htmlString += "</label></div></div></div>";
+
+	//3
+	htmlString += "<div class='form-group'>";
+	htmlString += "<label for='inputEmail3' class='control-label'>3. People are more likely to be selfish than autonomous machines.</label></div>";
+
+	htmlString += "<div class='form-group'><div class='col-sm-10'> <div class='checkbox'>";
+	htmlString += "<label><input type='radio' name='peopleselfish'  value='1'>  Strongly disagree";
+	htmlString += "</label><label><input type='radio' name='peopleselfish'  value='2'>  Somewhat disagree";
+	htmlString += "</label><label><input type='radio' name='peopleselfish'  value='3'>  Neutral";
+	htmlString += "</label><label><input type='radio' name='peopleselfish'  value='4'>  Somewhat agree";
+	htmlString += "</label><label><input type='radio' name='peopleselfish'  value='5'>  Strongly agree";
+	htmlString += "</label></div></div></div>";
+
+	//4
+	htmlString += "<div class='form-group'>";
+	htmlString += "<label for='inputEmail3' class='control-label'>4. People are more likely to be trustworthy than autonomous machines.</label></div>";
+
+	htmlString += "<div class='form-group'><div class='col-sm-10'> <div class='checkbox'>";
+	htmlString += "<label><input type='radio' name='peopleautonomous'  value='1'>  Strongly disagree";
+	htmlString += "</label><label><input type='radio' name='peopleautonomous'  value='2'>  Somewhat disagree";
+	htmlString += "</label><label><input type='radio' name='peopleautonomous'  value='3'>  Neutral";
+	htmlString += "</label><label><input type='radio' name='peopleautonomous'  value='4'>  Somewhat agree";
+	htmlString += "</label><label><input type='radio' name='peopleautonomous'  value='5'>  Strongly agree";
+	htmlString += "</label></div></div></div>";
+
+	//5
+	htmlString += "<div class='form-group'>";
+	htmlString += "<label for='inputEmail3' class='control-label'>5. People are more likely to be forgiving than autonomous machines.</label></div>";
+
+	htmlString += "<div class='form-group'><div class='col-sm-10'> <div class='checkbox'>";
+	htmlString += "<label><input type='radio' name='peopleforgiving'  value='1'>  Strongly disagree";
+	htmlString += "</label><label><input type='radio' name='peopleforgiving'  value='2'>  Somewhat disagree";
+	htmlString += "</label><label><input type='radio' name='peopleforgiving'  value='3'>  Neutral";
+	htmlString += "</label><label><input type='radio' name='peopleforgiving'  value='4'>  Somewhat agree";
+	htmlString += "</label><label><input type='radio' name='peopleforgiving'  value='5'>  Strongly agree";
+	htmlString += "</label></div></div></div>";
+
+	//6
+	htmlString += "<div class='form-group'>";
+	htmlString += "<label for='inputEmail3' class='control-label'>6. People are more likely to be gullible than autonomous machines.</label></div>";
+
+	htmlString += "<div class='form-group'><div class='col-sm-10'> <div class='checkbox'>";
+	htmlString += "<label><input type='radio' name='peoplegullible'  value='1'>  Strongly disagree";
+	htmlString += "</label><label><input type='radio' name='peoplegullible'  value='2'>  Somewhat disagree";
+	htmlString += "</label><label><input type='radio' name='peoplegullible'  value='3'>  Neutral";
+	htmlString += "</label><label><input type='radio' name='peoplegullible'  value='4'>  Somewhat agree";
+	htmlString += "</label><label><input type='radio' name='peoplegullible'  value='5'>  Strongly agree";
+	htmlString += "</label></div></div></div>";
+
+	//7
+	htmlString += "<div class='form-group'>";
+	htmlString += "<label for='inputEmail3' class='control-label'>7. People are more likely to be bullied than autonomous machines.</label></div>";
+
+	htmlString += "<div class='form-group'><div class='col-sm-10'> <div class='checkbox'>";
+	htmlString += "<label><input type='radio' name='peoplebullied'  value='1'>  Strongly disagree";
+	htmlString += "</label><label><input type='radio' name='peoplebullied'  value='2'>  Somewhat disagree";
+	htmlString += "</label><label><input type='radio' name='peoplebullied'  value='3'>  Neutral";
+	htmlString += "</label><label><input type='radio' name='peoplebullied'  value='4'>  Somewhat agree";
+	htmlString += "</label><label><input type='radio' name='peoplebullied'  value='5'>  Strongly agree";
+	htmlString += "</label></div></div></div>";
+
+    htmlString += "</div>";
 htmlString += '</form>';
 
 return htmlString;
