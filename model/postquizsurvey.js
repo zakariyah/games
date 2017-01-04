@@ -21,7 +21,14 @@ selfish1: String,
 thought: String,
 preference: String,
 reason1:String,
-reason2:String
+reason2:String,
+peoplebullied:String,
+peoplegullible:String,
+peopleforgiving:String,
+peopleautonomous:String,
+peopleselfish:String,
+peopledevious:String,
+peoplecooperative:String
 });
 
 postQuizSurveySchema.statics.createPostQuiz = function(information) {
@@ -48,7 +55,14 @@ selfish1: information.selfish1
 , thought: information.thought,
 preference: information.preference,
 reason1:information.reason1,
-reason2:information.reason2
+reason2:information.reason2,
+peoplebullied:information.peoplebullied,
+peoplegullible:information.peoplegullible,
+peopleforgiving:information.peopleforgiving,
+peopleautonomous:information.peopleautonomous,
+peopleselfish:information.peopleselfish,
+peopledevious:information.peopleselfish,
+peoplecooperative:information.peoplecooperative
     });
 
     newPostQuizSurvey.save(function(err) {
