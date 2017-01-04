@@ -513,8 +513,8 @@ var PrisonersDilemma = function()
         htmlString += "</div></div>";
         var actionsElement = document.getElementById('fullPage');
         actionsElement.innerHTML = htmlString;
-        var toCheckForNext = [['accessSkills', 'enjoy', 'familiarity', 'risk'], ['cooperative', 'forgiving', 'vengeful', 'selfish', 'predictable', 'cooperative1', 'forgiving1', 'vengeful1', 'selfish1', 'predictable1'], []];
-        new Quiz('page', 3, false, false, toCheckForNext);
+        var toCheckForNext = [['accessSkills', 'enjoy', 'familiarity', 'risk'], ['cooperative', 'forgiving', 'vengeful', 'selfish', 'predictable', 'cooperative1', 'forgiving1', 'vengeful1', 'selfish1', 'predictable1'], ['thought', 'reason1', 'preference', 'reason2'], []];
+        new Quiz('page', 4, false, false, toCheckForNext);
 	}
 
 
