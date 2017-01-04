@@ -178,7 +178,7 @@ htmlString += "<div class=' col-sm-6'><textarea name='reason2' class='form-contr
 htmlString += "</div>";
 
 
-htmlString += "<div id='page4' style='display:block'>";
+htmlString += "<div id='page4' style='display:none'>";
 	  // htmlString += "Page 1";
 	htmlString += "<div class='form-group'>";
 	htmlString += "<label for='inputEmail3' class='control-label'>1. People are more likely to be cooperative than autonomous machines.</label></div>";
