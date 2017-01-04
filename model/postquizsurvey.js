@@ -61,7 +61,7 @@ peoplegullible:information.peoplegullible,
 peopleforgiving:information.peopleforgiving,
 peopleautonomous:information.peopleautonomous,
 peopleselfish:information.peopleselfish,
-peopledevious:information.peopleselfish,
+peopledevious:information.peopledevious,
 peoplecooperative:information.peoplecooperative
     });
 
