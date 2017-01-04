@@ -9,7 +9,7 @@ var room = function(player1, player2)
 	this.presentChoices = {};
 	this.round = 1;
 	this.agentPresent = false;
-	this.gameRounds = 50 + Math.floor((Math.random() * 3));
+	this.gameRounds = 5 + Math.floor((Math.random() * 3));
 	//this.gameRounds = 2; // + Math.floor((Math.random() * 2));
 
 	this.changeRoomState = function()
