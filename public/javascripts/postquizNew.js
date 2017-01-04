@@ -174,13 +174,12 @@ htmlString += "<div class='form-group'> <div class='col-sm-10'><div class='check
 
 htmlString += "<div class='form-group'><div class='col-sm-10'><label for='inputEmail3' class='control-label col-sm-6'>Please explain briefly the reason for your choice above.</label>";
 htmlString += "<div class=' col-sm-6'><textarea name='reason2' class='form-control' rows='3'></textarea></div></div></div>";
-htmlString += " <div class='form-group'><div class='col-sm-offset-6 col-sm-6'>";
-htmlString += "<input name='proceed' type='submit' class='btn btn-primary' value='Go To Payment'/></div></div>";
-htmlString += "</div>";
+
 htmlString += "</div>";
 
+
 htmlString += "<div id='page4' style='display:block'>";
-	  // htmlString += "Page 4";
+	  // htmlString += "Page 1";
 	htmlString += "<div class='form-group'>";
 	htmlString += "<label for='inputEmail3' class='control-label'>1. People are more likely to be cooperative than autonomous machines.</label></div>";
 
@@ -264,8 +263,15 @@ htmlString += "<div id='page4' style='display:block'>";
 	htmlString += "</label><label><input type='radio' name='peoplebullied'  value='5'>  Strongly agree";
 	htmlString += "</label></div></div></div>";
 
+	htmlString += " <div class='form-group'><div class='col-sm-offset-6 col-sm-6'>";
+	htmlString += "<input name='proceed' type='submit' class='btn btn-primary' value='Go To Payment'/></div></div>";
+
     htmlString += "</div>";
-htmlString += '</form>';
+
+    // htmlString += "</div>";
+
+
+	htmlString += '</form>';
 
 return htmlString;
 }
