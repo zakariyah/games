@@ -6,7 +6,7 @@ var app = require('../app');
 var io = require('socket.io');
 // var cookieParser = require('cookie-parser');
 var connecter = require('../database');
-connecter('mongodb://127.0.0.1/gameTestHumanmTurk50Agent');
+connecter('mongodb://127.0.0.1/gameTestBotmTurk50');
 var SessionSockets = require('session.socket.io');
 var gameController = require('../controller/gameController');
 var gameplayer = require('../controller/gameplayer');
