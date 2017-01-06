@@ -334,7 +334,7 @@ var WaitingTimeElapsed = function(socket)
 	var intervalWaiting = 1000;
 	var waitingTimePeriodicFunction = function(count)
 	{
-		document.getElementById('timerBegin').innerHTML = count + " second" + ((count > 1) ? "s" : "") + " remaining. Please wait for someone else to join";
+		document.getElementById('timerBegin').innerHTML = count + " second" + ((count > 1) ? "s" : "") + " remaining. Please wait while we instantiate the bot";
 	}
 
 	var waitingTimeEndFunction = function()
